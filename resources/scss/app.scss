@@ -1,0 +1,151 @@
+@use './partials/variables' as *;
+
+$fa-font-path: "../webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: $basefont;
+}
+
+footer {
+    height: 150px;
+    background-color: $lightGray;
+}
+
+.button {
+    height: 40px;
+    border: 2px solid $azure;
+    width: 150px;
+
+    
+}
+
+a {
+    color: gray;
+    height: 100%;
+
+    &:hover {
+        color: $azure;
+    }
+}
+
+header {
+    border-bottom: 5px solid $azure;
+    
+}
+
+main {
+    .first {
+
+        display: flex;
+        gap: 10px;
+
+    }
+    .e-card {
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+.main {
+    img {
+        width: 50px;
+    }
+}
+
+.container {
+    height: 150px;
+}
+
+.sub-nav {
+    background-color: $azure;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.links {
+    background-image: url(../../public/img/footer-bg.jpg);
+    height: 450px;
+    overflow: hidden;
+    color: white;
+
+    img {
+        width: 600px;
+        position: relative;
+        bottom: 70px;
+    }
+}
+
+.create {
+    color: #E6F4F1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0082F9;
+
+
+    form {
+        border-radius: 15px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color: #424656;
+    }
+
+    input, textarea {
+        width: 70%;
+        height: 30px;
+        background-color: #99AAE0;
+        border-radius: 15px;
+        border: none;
+        padding: 20px;
+    }
+
+    button{
+
+    }
+}
+
+.edit {
+    display: flex;
+    flex-direction: column;
+
+    .comic-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            width: 20%;
+        }
+    }
+
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.create {
+    button{
+        background-color: rgb(15, 159, 15);
+        color: white;
+    }
+}
